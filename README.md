@@ -13,3 +13,18 @@ function normalizeStr (str) {
 }
 console.log(normalizeStr(str)) //I Am Your Friend Can I Borrow
 ```
+```
+function getDivisor (m,n) {
+	let a = m>n? m: n
+	let b = m<n? m: n
+
+	while(a-b!=0)
+	{
+		var temp = b
+		b = a - b
+		a = temp
+	}
+	return a
+}
+console.log(getDivisor(16,8)) // 8
+```
