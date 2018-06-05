@@ -1,5 +1,5 @@
 # JavaScript
-算法
+格式化string
 ```
 var str = 'i am    YouR FRiend      CAN i BORROW';
 function normalizeStr (str) {
