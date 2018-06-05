@@ -1,5 +1,6 @@
 
 一：格式化string
+```
 var str = 'i am    YouR FRiend      CAN i BORROW';
 function normalizeStr (str) {
 	let arr = str.split(' ')
@@ -10,8 +11,10 @@ function normalizeStr (str) {
 	return arrNew.join(' ')
 }
 console.log(normalizeStr(str)) //I Am Your Friend Can I Borrow
+```
 
 二：最大公约数
+```
 function getDivisor (m,n) {
 	let a = m>n? m: n
 	let b = m<n? m: n
@@ -25,14 +28,17 @@ function getDivisor (m,n) {
 	return a
 }
 console.log(getDivisor(16,8)) // 8
+```
 
 三：最小公倍数（=积/最大公约数）
+```
 function getMultiple (m,n) {
 	 let value = getDivisor(m,n)
 	 return = m*n/value
 }
-
+```
 四：NGE为元素右边第一个比它大的元素
+```
 var arr = [3,5,4,1,100,333]
 function getNGE (arr) {
 	let arrNew = []
@@ -48,3 +54,4 @@ function getNGE (arr) {
 	return arrNew
 }
 console.log(getNGE(arr)) //[ 5, 100, 100, 100, 333, -1 ]
+```
