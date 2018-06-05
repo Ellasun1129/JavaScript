@@ -35,3 +35,21 @@ function getMultiple (m,n) {
 	 return = m*n/value
 }
 ```
+NGE为元素右边第一个比它大的元素
+```
+var arr = [3,5,4,1,100,333]
+function getNGE (arr) {
+	let arrNew = []
+	arr.forEach((el,i)=>{
+		let spliceArr = [...arr]
+		if(i+1==arr.length){
+			arrNew[i] = -1
+		}else {
+			spliceArr = spliceArr.slice(i+1)
+			arrNew[i] = spliceArr.find(key=>key>=el)
+		}
+	})
+	return arrNew
+}
+console.log(getNGE(arr)) //[ 5, 100, 100, 100, 333, -1 ]
+```
