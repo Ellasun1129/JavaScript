@@ -1,7 +1,6 @@
 # JavaScript
 算法
 ```
-// 1
 var str = 'i am    YouR FRiend      CAN i BORROW';
 function normalizeStr (str) {
 	let arr = str.split(' ')
@@ -13,6 +12,7 @@ function normalizeStr (str) {
 }
 console.log(normalizeStr(str)) //I Am Your Friend Can I Borrow
 ```
+最大公约数
 ```
 function getDivisor (m,n) {
 	let a = m>n? m: n
@@ -27,4 +27,11 @@ function getDivisor (m,n) {
 	return a
 }
 console.log(getDivisor(16,8)) // 8
+```
+最小公倍数（=积/最大公约数）
+```
+function getMultiple (m,n) {
+	 let value = getDivisor(m,n)
+	 return = m*n/value
+}
 ```
