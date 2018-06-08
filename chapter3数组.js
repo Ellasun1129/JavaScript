@@ -63,3 +63,20 @@ let a = [1,2,3,4,5,6,5,3,2,4,56,4,1,2,1,1,1,1,1,1,56,45,56]
  }
  console.log(getUnitArr(a)) // [1, 2, 3, 4, 5, 6, 56, 45]
 
+// 寻找两个有序数组最小相同元素
+const a = [1, 2, 5, 9, 10]
+const b = [3, 4, 6, 9, 10]
+
+function findElement (a, b) {
+  let i = j = 0;
+  while(i<a.length || j < b.length){
+    if(a[i] == b[j]){
+      return a[i]
+    }else if(a[i] > b[j]){
+      j++
+    }else if(a[i] < b[j]){
+      i++
+    }
+  }
+}
+console.log(findElement(a, b)) // 9
