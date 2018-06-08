@@ -36,6 +36,21 @@ console.log(sortChop(arr1))
 arr = [1,2,[33,43],20,19];
 arr.join(".").replace(/,/g,".").split("."); //["1", "2", "33", "43", "20", "19"]
 
+var arr = [1, 2, 3, [3, 3, 3, [5, 4, 5, 6, 6, 7, 8]], [333, 4444]]
+let newArr = []
+// 定义一个函数
+function flatten(arr) {
+  arr.forEach(t=>{
+    if (!Array.isArray(t)) {
+      newArr.push(t);
+     } else {
+      flatten(t)
+     }
+  })
+}
+flatten(arr)
+console.log(newArr) //[ 1, 2, 3, 3, 3, 3, 5, 4, 5, 6, 6, 7, 8, 333, 4444 ]
+
 // 数组去重
 var a = [1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3,2,3,3,2,2,1,23,1,23,2,3,2,3,2,3];
 var u = [...new Set(a)]  //[1, 2, 3, 23]
