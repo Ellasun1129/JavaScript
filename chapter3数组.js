@@ -33,3 +33,5 @@ function sortChop (arr) {
 }
 console.log(sortChop(arr1))
 // 将数组拍平
+arr = [1,2,[33,43],20,19];
+arr.join(".").replace(/,/g,".").split("."); //["1", "2", "33", "43", "20", "19"]
