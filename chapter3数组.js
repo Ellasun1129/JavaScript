@@ -80,3 +80,20 @@ function findElement (a, b) {
   }
 }
 console.log(findElement(a, b)) // 9
+
+// 查找一个字符串中出现次数最多的字符，统计这个次数
+var str = 'ajfewiqnnfsdajfdajfdkakfjkdsfjds'
+var obj = {}
+str.split('').forEach(el=>{
+  if(obj[el]){
+    obj[el] = obj[el]+1
+  }else{
+    obj[el] = 1
+  }
+})
+
+let times = Math.max(...Object.values(obj))
+let item = Object.keys(obj).find(el=>obj[el]==times)
+console.log(obj) // { a: 4, j: 5, f: 6, e: 1, w: 1, i: 1, q: 1, n: 2, s: 3, d: 5, k: 3 }
+console.log(times) // 6
+console.log(item) // f
