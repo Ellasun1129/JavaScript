@@ -13,3 +13,11 @@ true.constructor == Boolean // true
 (123).constructor == Number // true
 "string".constructor == String // true
 ```
+方法三: 最简单的方法
+```
+Object.prototype.toString.call(arr) === “[object Array]”
+```
+方法四：isArray
+```
+Array.isArray(arr)
+```
