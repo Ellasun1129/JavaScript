@@ -40,3 +40,11 @@ arr.join(".").replace(/,/g,".").split("."); //["1", "2", "33", "43", "20", "19"]
 var a = [1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3,2,3,3,2,2,1,23,1,23,2,3,2,3,2,3];
 var u = [...new Set(a)]  //[1, 2, 3, 23]
 
+let a = [1,2,3,4,5,6,5,3,2,4,56,4,1,2,1,1,1,1,1,1,56,45,56]
+ function getUnitArr (list) {
+   let arr = []
+   list.forEach(el=>arr.indexOf(el)===-1?arr.push(el): '')
+   return arr
+ }
+ console.log(getUnitArr(a)) // [1, 2, 3, 4, 5, 6, 56, 45]
+
