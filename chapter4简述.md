@@ -8,8 +8,8 @@ console.log(arr instanceof Array) //返回true
 方法二： constructor
 ```
 [].constructor == Array // true
-{}.constructor == Object
-true.constructor == Boolean
-(123).constructor == Number
-"string".constructor == String
+{}.constructor == Object // true
+true.constructor == Boolean // true
+(123).constructor == Number // true
+"string".constructor == String // true
 ```
