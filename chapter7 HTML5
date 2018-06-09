@@ -1,6 +1,12 @@
-一：web socket连通性：服务器和浏览器之间能够通过web socket（网络套接字）来保持持久联通。
+一：web socket
+web socket连通性：服务器和浏览器之间能够通过web socket（网络套接字）来保持持久联通。
 浏览器和服务器只需要做一个握手的动作，然后，浏览器和服务器之间就形成了一条快速通道。两者之间就直接可以数据互相传送。
 Socket.readyState 0 - 表示连接尚未建立。1 - 表示连接已建立，可以进行通信。2 - 表示连接正在进行关闭。3 - 表示连接已经关闭或者连接不能打开。
 Socket.onopen Socket.onclose Socket.onerror Socket.onmessage
 Socket.close()Socket.send()
-二：
+二：离线 & 存储
+三：多媒体
+四：3D, 图像 & 效果
+五：性能 & 集成
+六：设备访问
+七：样式
