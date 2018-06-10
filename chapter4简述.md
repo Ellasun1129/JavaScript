@@ -21,3 +21,10 @@ Object.prototype.toString.call(arr) === “[object Array]”
 ```
 Array.isArray(arr)
 ```
+- JS中深浅拷贝
+```
+//浅拷贝
+Object.assgin({},target)
+...arr/...obj
+//深拷贝
+```
