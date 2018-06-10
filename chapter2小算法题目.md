@@ -55,3 +55,17 @@ function getNGE (arr) {
 }
 console.log(getNGE(arr)) //[ 5, 100, 100, 100, 333, -1 ]
 ```
+四：数字 12345678 转化成 RMB形式 如： 12,345,678
+```
+function turnNumToRMB (num) {
+  var len = Math.ceil((num+'').length/3)
+  var arr = [], _num = num
+  for(var i = 0; i< len; i++){
+    arr[len-i-1] = _num%1000
+    _num = parseInt(_num/1000)
+  }
+  return arr.join(',')
+}
+var str = 1234567888
+console.log(turnNumToRMB(str)) // 1,234,567,888
+```
