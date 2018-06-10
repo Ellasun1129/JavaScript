@@ -27,4 +27,17 @@ Array.isArray(arr)
 Object.assgin({},target)
 ...arr/...obj
 //深拷贝
+let a={name:'yy',age:26, friends: {c: 'name'}};
+function deepCopy (source) {
+  let result = {}
+  for (let k in source) {
+    result[k] = typeof source[k] ==='object'? deepCopy(source[k]) : source[k]
+  }
+  return result
+}
+console.log(deepCopy(a)) // { name: 'yy', age: 26, friends: { c: 'name' } }
+//单纯只有数据的对象
+var obj1 = { body: { a: 10 } };
+var obj2 = JSON.parse(JSON.stringify(obj1));
+//var newObj = Object.create(oldObj)
 ```
