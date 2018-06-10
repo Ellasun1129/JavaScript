@@ -77,3 +77,13 @@ function getMaxRange (arr) {
 }
 console.log(getMaxRange(arr)) // 6
 ```
+六：找到提供的句子中最长的单词，并计算它的长度。
+```
+let str = "The quick brown fox jumping over the lazy dog"
+function findLongestWord (str) {
+  return str.split(' ').reduce((pre,cur)=>{
+    return pre.length>cur.length? pre: cur
+  })
+}
+console.log(findLongestWord(str),findLongestWord(str).length) //jumping 7
+```
