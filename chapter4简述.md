@@ -39,5 +39,4 @@ console.log(deepCopy(a)) // { name: 'yy', age: 26, friends: { c: 'name' } }
 //单纯只有数据的对象
 var obj1 = { body: { a: 10 } };
 var obj2 = JSON.parse(JSON.stringify(obj1));
-//var newObj = Object.create(oldObj)
 ```
