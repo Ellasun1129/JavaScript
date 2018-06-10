@@ -69,3 +69,11 @@ function turnNumToRMB (num) {
 var str = 1234567888
 console.log(turnNumToRMB(str)) // 1,234,567,888
 ```
+五：找出正整数组的最大差值
+```
+let arr =  [10,5,11,7,8,9]
+function getMaxRange (arr) {
+  return Math.max(...arr)-Math.min(...arr)
+}
+console.log(getMaxRange(arr)) // 6
+```
