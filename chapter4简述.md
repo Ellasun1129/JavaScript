@@ -70,3 +70,9 @@ p:first-child...儿子选择器(p是某个元素的第一个儿子)
 伪类:hover :focus :not :only-child :empty :checked :disabled
 伪元素::before ::after ::selection ::first-letter ::first-line
 ```
+- 边框圆角/阴影
+border-radius 边框圆角
+         内阴影 右偏、下偏、模糊半径、延展宽度、颜色
+box-shadow: inset 2px 2px 2px 2px black;
+        右偏、下偏、模糊半径、颜色
+text-shadow: 1px 1px 1px red;
