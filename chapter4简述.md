@@ -60,3 +60,13 @@ var obj2 = JSON.parse(JSON.stringify(obj1));
   align-self: auto; /*允许单个项目有与其他项目不一样的对齐方式*/
 }
 ```
+- CSS3选择器
+```
+>直接子代
++下一个兄弟
+~下所有兄弟
+[]属性选择器
+p:first-child...儿子选择器(p是某个元素的第一个儿子)
+伪类:hover :focus :not :only-child :empty :checked :disabled
+伪元素::before ::after ::selection ::first-letter ::first-line
+```
