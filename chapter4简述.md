@@ -88,3 +88,19 @@ background-size:cover contain 背景图片
 属性参与过渡 时间 不匀速 不延迟
 transition:all 1s ease 0s;
 ```
+- CSS3
+```
+一:兼容性策略 平稳退化/渐进渐强
+二:2D变形
+transform变形 transition过渡 animation动画
+/*rotate(angle)	定义 2D 旋转，在参数中规定角度。*/
+/*scale(2)*/
+/*skew(45deg, 45deg)*/
+三、3D变形
+transform:rotateX(45deg)正仰 负磕
+transform:rorateY(45deg)从顶看，逆时针
+四、空间移动
+transform:translateX(300px);这个元素的左手
+transform:translateY(300px);这个元素的下边
+transform:translateZ(300px);这个元素的朝向
+```
