@@ -84,5 +84,7 @@ backgrond-origin:padding区域没有背景
 background-size:cover contain 背景图片
 ```
 - 过渡 
+```
 属性参与过渡 时间 不匀速 不延迟
 transition:all 1s ease 0s;
+```
