@@ -76,7 +76,7 @@ border-radius 边框圆角
 box-shadow: inset 2px 2px 2px 2px black;
         右偏、下偏、模糊半径、颜色
 text-shadow: 1px 1px 1px red;
--background系列
+- background系列
 ```
 线性渐变:background-image: linear-gradient(top,red,blue);
 背景裁切:background-clip:content-box;padding区域没有背景
