@@ -102,7 +102,7 @@ animation:mymove 5s infinite;
 	right:0;
 	margin: auto;
 }
-//子元素宽高已知
+//4子元素宽高已知
 .parent{
    position:relative;
 }
