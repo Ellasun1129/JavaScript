@@ -80,6 +80,16 @@ animation:mymove 5s infinite;
    justify-content:center;
    align-items:center;
 }
+//2 transform
+.parent{
+   position:relative;
+}
+.child{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+}
 ```
 
 
