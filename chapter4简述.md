@@ -55,3 +55,16 @@ XHR请求，必须保证同源。
 4开头 - 请求错误。404notFound 405notAllowed
 5开头 - 服务器错误。500服务器内部错误 504tiomeOut
 ```
+- debounce
+```
+var debounce = function(action, delay) {
+    var timer = null;
+    return function() {
+        var context = this, args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+            action.apply(context, args)
+        }, delay);
+    }
+}
+```
