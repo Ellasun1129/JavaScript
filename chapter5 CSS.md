@@ -114,6 +114,9 @@ animation:mymove 5s infinite;
    left:50%;
    margin:-100px 0 0 -50px;
 }
+//5 单行文本
+text-align: center;
+line-height: 父盒子height;
 ```
 
 
