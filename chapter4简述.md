@@ -77,3 +77,12 @@ var debounce = function(action, delay) {
 3)overflow不为visible
 4)display为inline-block, table-cell, flex
 ```
+- HTTP请求方式
+```
+GET获取
+POST提交
+PUT修改
+DELETE删除
+OPTIONS允许客户端查看服务器的性能。
+TRACE回显服务器收到的请求，主要用于测试或诊断。
+```
