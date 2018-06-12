@@ -40,3 +40,11 @@ console.log(deepCopy(a)) // { name: 'yy', age: 26, friends: { c: 'name' } }
 var obj1 = { body: { a: 10 } };
 var obj2 = JSON.parse(JSON.stringify(obj1));
 ```
+- 跨域
+```
+协议、域名和端口号要完全一致，是同源。
+XHR请求，必须保证同源。
+1）JSONP  动态创建script标签，利用src属性，请求资源，将返回数据作为实参传入回调函数。
+2）window.postMessage
+3）window.name+iframe同一个window共享name(2M左右string)，创建隐藏iframe的src为目标域，来获取数据，
+```
