@@ -71,6 +71,7 @@ to {left:200px;}
 div{
 animation:mymove 5s infinite;
 }
+```
 - 水平垂直居中
 ```
 //1 flex
