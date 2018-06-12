@@ -91,3 +91,10 @@ TRACE回显服务器收到的请求，主要用于测试或诊断。
 Internet Protocol网络协议
 ip地址使用32位地址，以点分十进制表示，如192.168.0.1。
 ```
+- webpack代码打包
+```
+1)去除不必要的插件
+2)提取第三方库
+3)代码分割require.ensure(dependencies, callback, chunkName)
+4)设置缓存MD5加密的chunkhash
+```
