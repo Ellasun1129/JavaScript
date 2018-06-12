@@ -48,3 +48,10 @@ XHR请求，必须保证同源。
 2）window.postMessage
 3）window.name+iframe同一个window共享name(2M左右string)，创建隐藏iframe的src为目标域，来获取数据，
 ```
+- http错误类型
+```
+2开头 - 成功。200OK
+3开头 - 重定向。301永久移动 302临时移动 303查看其它位置 304未修改
+4开头 - 请求错误。404notFound 405notAllowed
+5开头 - 服务器错误。500服务器内部错误 504tiomeOut
+```
