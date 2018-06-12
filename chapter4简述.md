@@ -98,3 +98,20 @@ ip地址使用32位地址，以点分十进制表示，如192.168.0.1。
 3)代码分割require.ensure(dependencies, callback, chunkName)
 4)设置缓存MD5加密的chunkhash
 ```
+- 共20阶台阶，一次可以走1步或者2步，总共多少种办法
+```
+分析： 
+根据走2步的不同情况分析，最少一个2步都不走，最多为n/2个
+台阶数1 2 3 4 5
+走法  1 2 3 5 8
+fib数 2 3 4 5 6
+故台阶数为20时，是fib(21)
+结论：斐波那契
+function getFib(n){
+  if(n===1||n===2){
+    return 1;
+  }
+  return getFib(n-1)+getFib(n-2);
+}
+console.log(getFib(21)) // 10946
+```
