@@ -117,6 +117,14 @@ animation:mymove 5s infinite;
 //5 单行文本
 text-align: center;
 line-height: 父盒子height;
+//6单个图片
+.parent{
+   text-align: center;
+   line-height: 父盒子height;
+}
+img{
+   vertical-align: middle;
+}
 ```
 
 
