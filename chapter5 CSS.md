@@ -102,6 +102,18 @@ animation:mymove 5s infinite;
 	right:0;
 	margin: auto;
 }
+//子元素宽高已知
+.parent{
+   position:relative;
+}
+.child{
+   position:absolute;
+   width:100px;
+   height:200px;
+   top:50%;
+   left:50%;
+   margin:-100px 0 0 -50px;
+}
 ```
 
 
