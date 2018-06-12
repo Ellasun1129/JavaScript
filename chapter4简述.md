@@ -68,3 +68,12 @@ var debounce = function(action, delay) {
     }
 }
 ```
+- BFC
+```
+(Block formatting context)   "块级格式化上下文"   独立的渲染区域
+触发：
+1)根元素 
+2)脱标(float为let或right/position为absolute或fixed) 
+3)overflow不为visible
+4)display为inline-block, table-cell, flex
+```
