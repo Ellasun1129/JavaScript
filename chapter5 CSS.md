@@ -62,4 +62,12 @@ transform:translateX(300px);这个元素的左手
 transform:translateY(300px);这个元素的下边
 transform:translateZ(300px);这个元素的朝向
 ```
-
+- animation
+```
+@keyframes mymove{
+from {left:0px;}
+to {left:200px;}
+}
+div{
+animation:mymove 5s infinite;
+}
