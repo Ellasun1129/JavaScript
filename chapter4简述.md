@@ -126,7 +126,11 @@ console.log(getFib(21)) // 10946
 （3）Cookie：大概4kb
 （4）localStorage：大概5MB
 ```
-
+- 回文
+```
+1 string.split('').reverse()
+2 比较i和length-i项
+```
 
 
 
