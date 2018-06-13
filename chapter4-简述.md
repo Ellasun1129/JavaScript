@@ -131,7 +131,19 @@ console.log(getFib(21)) // 10946
 1 string.split('').reverse()
 2 比较i和length-i项
 ```
-
+- react和vue异同
+```
+共同点：
+1）虚拟DOM
+2）响应式和可组合性的组件
+3）重点在核心库，像路由、全局状态管理来源第三方库
+不同之处：
+1）性能相似，react16优于Vue2.5
+2）templating VS JSX语法
+3）CSS 单文件组件 VS 全局引入
+4）状态管理 函数式编程 VS Vuex
+PS：Vue双向数据绑定：数据劫持，Object.defineProperty()监听setter和geter
+```
 
 
 
