@@ -87,3 +87,11 @@ function findLongestWord (str) {
 }
 console.log(findLongestWord(str),findLongestWord(str).length) //jumping 7
 ```
+七：字体高亮函数
+```
+const highlight = (strings, item) => {
+  return strings.split(item).join(`<span class='highlight'>${item}</span>`)
+}
+let str = '苹果中含有矿物质，所以多吃苹果呦'
+console.log(highlight(str,'苹果')) // <span class='highlight'>苹果</span>中含有矿物质，所以多吃<span class='highlight'>苹果</span>呦
+```
