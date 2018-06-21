@@ -154,7 +154,19 @@ PS：Vue双向数据绑定：数据劫持，Object.defineProperty()监听setter�
 - 原型链
 ![Image text](https://raw.githubusercontent.com/Ellasun1129/JavaScript/master/%E5%8E%9F%E5%9E%8B%E9%93%BE.png)
 
-
+- JS实现继承的集中方式：
+```
+1、原型链继承
+function A (){
+	this.name = 'tony'
+}
+function B (){
+	this.age = 20
+}
+B.prototype = new A()
+var b = new B()
+console.log(b.name) // tony
+```
 
 
 
