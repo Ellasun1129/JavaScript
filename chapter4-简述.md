@@ -151,7 +151,8 @@ PS：Vue双向数据绑定：数据劫持，Object.defineProperty()监听setter�
 3）执行函数体里面的语句
 4）返回这个新的对象
 ```
-
+- 原型链
+![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
 
 
 
