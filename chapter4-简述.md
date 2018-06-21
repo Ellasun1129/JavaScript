@@ -144,7 +144,13 @@ console.log(getFib(21)) // 10946
 4）状态管理 函数式编程 VS Vuex
 PS：Vue双向数据绑定：数据劫持，Object.defineProperty()监听setter和geter
 ```
-
+- new一个对象的过程
+```
+1）隐秘的创建一个新的空对象
+2）将这个函数里面的this绑定到刚才创建隐秘新对象上
+3）执行函数体里面的语句
+4）返回这个新的对象
+```
 
 
 
