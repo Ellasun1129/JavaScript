@@ -192,8 +192,10 @@ Desk.prototype = new Box(); //原型链继承
 var desk = new Desk(100);
 alert(desk.run());
 ```
-
-
+- 闭包
+```
+闭包就是能够读取其他函数内部变量的函数
+```
 
 
 
