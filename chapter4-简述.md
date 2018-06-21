@@ -177,6 +177,20 @@ function Desk(age){
 var desk = new Desk(200);
 alert(desk.age);//200
 alert(desk.name);//['Lee','Jack','Hello']
+三。组合继承（原型链继承+构造函数继承）
+function Box(age) {
+	this.name = ['Lee', 'Jack', 'Hello']
+	this.age = age;
+}
+Box.prototype.run = function () {
+	return this.name + this.age;
+};
+function Desk(age) {
+	Box.call(this, age); //对象冒充
+}
+Desk.prototype = new Box(); //原型链继承
+var desk = new Desk(100);
+alert(desk.run());
 ```
 
 
