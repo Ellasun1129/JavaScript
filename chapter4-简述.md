@@ -152,7 +152,7 @@ PS：Vue双向数据绑定：数据劫持，Object.defineProperty()监听setter�
 4）返回这个新的对象
 ```
 - 原型链
-![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
+![Image text](https://raw.githubusercontent.com/Ellasun1129/JavaScript/master/%E5%8E%9F%E5%9E%8B%E9%93%BE.png)
 
 
 
