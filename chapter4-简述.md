@@ -166,6 +166,17 @@ function B (){
 B.prototype = new A()
 var b = new B()
 console.log(b.name) // tony
+2、构造函数继承(对象冒充)
+function Box(age){
+	this.name=['Lee','Jack','Hello']
+	this.age=age;
+}
+function Desk(age){
+	Box.call(this,age); //对象冒充，给超类型传参
+}
+var desk = new Desk(200);
+alert(desk.age);//200
+alert(desk.name);//['Lee','Jack','Hello']
 ```
 
 
