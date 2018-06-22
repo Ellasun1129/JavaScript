@@ -1,5 +1,9 @@
-- js中typeof返回数据类型:string boolean number object function undefined  
-- 1.XHTML和HTML有什么区别
+- js中typeof返回数据类型
+ ```
+ string boolean number 
+ object function undefined 
+ ```
+- XHTML和HTML有什么区别
 ```
 Extensible HyperText Markup Language可扩展超文本标记语言
 1.结束标记
