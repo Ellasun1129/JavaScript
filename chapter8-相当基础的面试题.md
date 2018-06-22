@@ -15,3 +15,9 @@ Extensible HyperText Markup Language可扩展超文本标记语言
 7.注释内容中不使用使“--”
 8.特殊符号用编码表示
 ```
+- 前端页面三层
+```
+结构层 Html 
+样式层 CSS 
+交互层 JS
+```
