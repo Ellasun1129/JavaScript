@@ -29,3 +29,8 @@ fireFox  gecko
 IE trident
 Safari  webkit
 ```
+- 强制类型转换、隐式类型转换
+```
+String()/Boolean()/Number()/parseInt()/parseFloat()
+-/%*、!、+‘’、if(a==b)
+```
