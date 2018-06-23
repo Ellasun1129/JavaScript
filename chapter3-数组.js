@@ -97,3 +97,98 @@ let item = Object.keys(obj).find(el=>obj[el]==times)
 console.log(obj) // { a: 4, j: 5, f: 6, e: 1, w: 1, i: 1, q: 1, n: 2, s: 3, d: 5, k: 3 }
 console.log(times) // 6
 console.log(item) // f
+// 数组API
+```
+数组的方法：
+1、push() return new length
+2、unshift() return new length
+3、pop() return 被pop出去的item
+4、shift() return 被shift出去的item
+5、from 将类数组对象转换为数组
+function fun(){
+    return Array.prototype.slice.call(arguments,0);
+}
+
+console.log(fun("白板","幺鸡","二条")) // ["白板", "幺鸡", "二条"]
+
+function fun(){
+    return Array.from(arguments);
+}
+
+console.log(fun("白板","幺鸡","二条","三桶","四饼")) // ["白板", "幺鸡", "二条", "三桶", "四饼"]
+6、find()、findIndex() 回调函数 返回第一个使回调函数为true的项/项的下标
+7、includes() 数组是否包含给定的值 
+console.log([345,234,23,65,45].includes(23)) // true
+console.log([345,234,23,65,45].includes(’23’)) // false
+8、forEach() 遍历数组中的每一项
+9、filter() 返回一个新数组，新数组的项是原数组中return true的项
+10、map() 返回一个和原数组项数相同的项，每项都和原数组有映射关系
+11、reduce() reduceRight() array1.reduce(callbackfn[, initialValue])
+// Define the callback function.
+function addRounded (previousValue, currentValue) {
+    return previousValue + Math.round(currentValue);
+    }
+
+// Create an array.
+var numbers = [10.9, 15.4, 0.5];
+
+// Call the reduce method, starting with an initial value of 0.
+var result = numbers.reduce(addRounded, 0);
+
+console.log(result)
+// Output: 27
+
+12、entries()
+var entries = ["a", "b", "c"].entries();
+// entries.next().value == [0, "a"]
+// entries.next().value == [1, "b"]
+// entries.next().value == [2, "c"] 
+13、keys()
+var k = ["a", "b", "c"].keys();
+// k.next().value == 0
+// k.next().value == 1
+// k.next().value == 2 
+14、values()
+var v = ["a", "b", "c"].values();
+// v.next().value == "a"
+// v.next().value == "b"
+// v.next().value == "c" 
+15、Array.isArray(object) 
+
+16、array1.concat([item1[, item2[, . . . [, itemN]]]]) 
+
+17、array1.every(callbackfn[, thisArg])
+
+18、arrayObj.fill(value [ , start [ , end ] ]);
+
+[0, 0, 0].fill(7, 1);
+// Array contains [0,7,7]
+
+[0, 0, 0].fill(7);
+// Array contains [7,7,7] 
+19、array1.filter(callbackfn[, thisArg])
+
+20、array1.indexOf(searchElement[, fromIndex])
+
+21、arrayObj.join([separator]) 
+
+22、arrayObj.reverse() 
+
+23、arrayObj.slice(start, [end]) 
+24、array1.some(callbackfn[, thisArg])
+25、arrayobj.sort(sortFunction) 
+
+26、arrayObj.splice(start, deleteCount, [item1[, item2[, . . . [,itemN]]]])
+
+var arr = new Array("4", "11", "2", "10", "3", "1");
+arr.splice(2, 2, "21", "31");
+document.write(arr);
+
+// Output: 4,11,21,31,3,1
+27、array.toString()
+
+var arr = [1, 2,[55,[88],66], 3, 4];
+var s = arr.toString();
+s
+"1,2,55,88,66,3,4"
+```
