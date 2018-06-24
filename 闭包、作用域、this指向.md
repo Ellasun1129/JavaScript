@@ -109,8 +109,20 @@ var obj = {
 ```
 
 ```
-
-
+1、变量：使用但不声明：test = 4
+2、写入到只读属性：writable:false、只有get如set的object
+3、将属性添加至extensible为false的对象：Object.preventExtensions(testObj);
+4、delete：删除变量、函数、参数、configurable为false的属性
+5、重复属性、重复参数名
+6、未来保留字、关键字：private、public、static、yield
+7、八进制数
+8、this为null或undefined时，该值不会转换为全局对象
+9、eval、arguments不能用作标志符号
+10、语句块中不能声明函数
+11、eval内部声明变量无效
+12、无法更改arguments对象的成员值
+13、不允许arguments.calee
+14、不允许使用width
 ```
 
 ```
