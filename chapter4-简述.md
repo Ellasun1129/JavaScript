@@ -196,7 +196,37 @@ alert(desk.run());
 ```
 闭包就是能够读取其他函数内部变量的函数
 ```
+- 闭包、let、forEach
+```
+var arr = [1,2,3,4,5]
 
+for (var i = 0; i < 4; i++) {
+  setTimeout( function timer() {
+      console.log(arr[i]) // 5 5 5 5
+  }, 1000 )
+}
+
+for (var i = 0; i < 5; i++) {
+  (function(i){
+  	setTimeout( function timer() {
+      console.log(arr[i]) // 1 2 3 4 5
+  }, 1000 )
+  })(i)
+}
+
+for (let i = 0; i < 5; i++) {
+  setTimeout( function timer() {
+      console.log(arr[i])  // 1 2 3 4 5
+  }, 1000 )
+}
+
+arr.forEach((el,i)=>{
+  setTimeout( function timer() {
+      console.log(arr[i]) // 1 2 3 4 5
+  }, 1000 )
+})
+
+```
 
 
 
