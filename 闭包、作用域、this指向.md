@@ -71,8 +71,23 @@ function fun(n,o) {
 			// (0 undefined)  (1,0)     (2,1)      (3,1)
 ```
 ```
-
-
+改错：
+1、缓存this
+2、闭包存i
+var obj = {
+    name: " jsCoder",
+    skill: ["css3","html5", "es6", "react", "angular"],
+    say: function () {      
+        for(var i = 0, len = this.skill.length; i< len; i++){
+            setTimeout(function(){
+                console.log("No." + i + this.name);
+                console.log(this.skill[i]);
+                console.log('--------------------------');
+            },100);
+        }
+    }
+}
+obj.say();
 ```
 
 ```
