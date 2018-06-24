@@ -88,6 +88,24 @@ var obj = {
     }
 }
 obj.say();
+right:
+var obj = {
+        name: " jsCoder",
+        skill: ["css3","html5", "es6", "react", "angular"],
+        say: function () {
+          var that = this
+          for(var i = 0, len = this.skill.length; i< len; i++){
+						(function (i) {
+              setTimeout(function(){
+                console.log("No." + i + that.name);
+                console.log(that.skill[i]);
+                console.log('--------------------------');
+              },100);
+            })(i)
+          }
+        }
+      }
+      obj.say();
 ```
 
 ```
