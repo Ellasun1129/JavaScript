@@ -126,6 +126,7 @@ var obj = {
 ```
 
 ```
-
-
+call和apply的区别
+1、调用函数、改变this指向
+2、call(obj, arguments1,arguments2)、apply(obj, [arguments1,arguments2])
 ```
