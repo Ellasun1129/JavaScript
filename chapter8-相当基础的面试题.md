@@ -57,3 +57,26 @@ b.value = 2;
 console.log(a.value); // 2 引用类型
 
 ```
+```
+window.color = 'red';
+var o = {color: 'blue'};
+function sayColor(){
+  console.log(this.color);
+}
+sayColor(); // red
+sayColor.call(this); // red
+sayColor.call(window);  // red
+sayColor.call(o);  // blue
+```
+```
+var a = 5;
+function test(){
+  a = 0;
+  console.log(a);
+  console.log(this.a); //没有定义 a这个属性
+  var a;
+  console.log(a)
+}
+test(); // 0 5 0
+new test(); // 0 undefined 0 构造函数实例化对象，this指向实例化对象，无a属性，故为undefined
+```
