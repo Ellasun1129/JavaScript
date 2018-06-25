@@ -85,3 +85,9 @@ readyonly与disabled的区别
 1、readyonly只适用于input、textarea，disabled适用于所有表单元素
 2、readyonly会被提交，disabled不会提交
 ```
+```
+三种弹窗
+alert()
+confirm()
+prompt()
+```
