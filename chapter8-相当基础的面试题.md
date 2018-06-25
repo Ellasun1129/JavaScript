@@ -100,3 +100,71 @@ prompt()
       console.log(a); //a is not defined(函数内部变量及时创建、销毁)
       console.log(b); //5 隐式全局变量
  ```
+ ```
+ var a;
+var b = a * 0; // NaN
+if (b == b) {
+  console.log(b * 2 + "2" - 0 + 4);
+} else {
+  console.log(!b * 2 + "2" - 0 + 4); // 1*2+'2'-0+4=26
+}
+ ```
+ 
+ ```
+ <script>
+    var a = 1;
+</script>
+<script>
+    var a;
+    var b = a * 0; // 0
+    if (b == b) {
+      console.log(b * 2 + "2" - 0 + 4); // 6
+    } else {
+      console.log(!b * 2 + "2" - 0 + 4);
+    }
+</script>
+ ```
+ 
+ ```
+ var t = 10;
+function test(t){
+  t++;
+}
+test(t);
+console.log(t); // 10
+ ```
+ 
+ ```
+ var t = 10;
+function test(test){
+  t = ++test;
+}
+test(t);
+console.log(t); // 11 隐式全局变量
+ ```
+```
+var t = 10;
+function test(test){
+  t = t + test;
+  console.log(t); 
+  var t = 3;
+}
+test(t);// NaN
+console.log(t);// 10
+```
+
+
+```
+<script>
+    var a = 1;
+</script>
+<script>
+    var a;
+    var b = a / 0;
+    if (b == b) { // Infinity===Infinity true
+      console.log(b * 2 + "2" + 4); // Infinity24
+    } else {
+      console.log(!b * 2 + "2" + 4);
+    }
+</script>
+```
