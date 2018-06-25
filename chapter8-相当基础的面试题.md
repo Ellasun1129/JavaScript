@@ -34,3 +34,26 @@ Safari  webkit
 String()/Boolean()/Number()/parseInt()/parseFloat()
 -/%*、!、+‘’、if(a==b)
 ```
+```
+var a;
+alert(typeof a); // undefined
+alert(b); // 报错
+```
+```
+var a = null;
+console.log(typeof a); //object
+000 对象
+1 整数
+010 浮点数
+100 字符串
+110 布尔
+```
+
+```
+var a = new Object();
+a.value = 1;
+b = a;
+b.value = 2;
+console.log(a.value); // 2 引用类型
+
+```
