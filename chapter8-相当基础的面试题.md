@@ -91,3 +91,12 @@ alert()
 confirm()
 prompt()
 ```
+```
+(function test(){
+        var a=b=5;
+        console.log(a); //5
+        console.log(b); //5
+      })();
+      console.log(a); //a is not defined(函数内部变量及时创建、销毁)
+      console.log(b); //5 隐式全局变量
+ ```
