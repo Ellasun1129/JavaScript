@@ -80,3 +80,8 @@ function test(){
 test(); // 0 5 0
 new test(); // 0 undefined 0 构造函数实例化对象，this指向实例化对象，无a属性，故为undefined
 ```
+```
+readyonly与disabled的区别
+1、readyonly只适用于input、textarea，disabled适用于所有表单元素
+2、readyonly会被提交，disabled不会提交
+```
