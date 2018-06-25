@@ -168,3 +168,69 @@ console.log(t);// 10
     }
 </script>
 ```
+```
+// 第1题：
+function setName(){
+		name="张三";
+}
+   setName();
+   console.log(name); // "张三"
+	// 第2题：
+   var a=1;
+   function test(){
+     console.log(a);
+     var a=1;
+   }
+   test(); // undefined
+	// 第3题：
+			var b=2;
+         function test2(){
+           window.b=3;
+           console.log(b);
+         }
+         test2();  // 3
+//  第4题：
+   c=5;
+   function test3(){
+     window.c=3;
+     console.log(c);
+     var c;
+     console.log(window.c);
+   }
+   test3(); // undefined 3
+//      第5题：
+var arr = [];
+      arr[0]  = 'a';
+      arr[1]  = 'b';
+      arr[10] = 'c';
+console.log(arr.length); // 11
+      console.log(arr[5]); // undefined
+//      第6题：
+      var a=1;
+      console.log(a++); // 1
+      console.log(++a); //3
+//      第11题：
+      var foo = 1;
+      function bar() {
+        foo = 10;
+        return;
+        function foo() {}
+      }
+      bar();
+      console.log(foo); // 1
+//      第12题：
+      console.log(a); //ƒ a(){}
+      var a = 3;
+      function a(){}
+      console.log(a); // 3
+//      第13题：
+      function foo(a) {
+        arguments[0] = 2;
+        console.log(a); // 2  严格模式下 不允许更改arguments属性为1
+      }
+      foo(1);
+//      第7题：
+console.log(null==undefined); // true / ===false
+console.log(typeof function(){}) //  function
+ console.log(parseInt(true)) // NaN
+ ```
