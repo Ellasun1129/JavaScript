@@ -227,7 +227,28 @@ arr.forEach((el,i)=>{
 })
 
 ```
-
+```
+window对象
+1、window.location对象：当前URL信息
+ 	hash：#锚点值
+	host/hostname：主机名
+	port：端口号
+	protocol：协议
+	search：搜索部分
+2、window.navigator对象：浏览器的信息
+	userAgent
+3、window.history对象：访问过的URL
+	back()
+	forward()
+	go()
+4、window.document对象
+	getElementById
+5、window.screen对象
+	屏幕信息
+function：
+alert()
+setTimeOut()
+```
 
 
 
