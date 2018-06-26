@@ -256,7 +256,12 @@ setTimeOut()
 ~按位非：例如：arr.indexOf(a)===-1，可以表示为：~arr.indexOf(a)是0
 按位异或(^)：两个数中只有一个1时返回1，其他情况返回0
 ```
-
+```
+cookies，sessionStorage和localStorage
+localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的
+sessionStorage会话存储
+cookie：HTTP请求会携带，大小限制，可设置有效期
+```
 
 
 
