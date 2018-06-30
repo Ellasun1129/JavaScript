@@ -12,3 +12,12 @@ return [...arguments].reduce((pre,cur)=>{return (pre+cur)},0)
   }
   console.log(getSum(1,2,3)) // 6
 ```
+```
+console.log(8|1) // 9
+~
+<<
+>>
+&
+| : 1000 | 1 => 1001 => 9
+^
+```
