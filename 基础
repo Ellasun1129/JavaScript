@@ -1,0 +1,112 @@
+var arr1 = [4,5,6,7];
+var arr2 = arr1;
+arr2[0] = 8;
+arr1.push(arr1.shift());
+console.log(arr1);// 5 6 7 8
+console.log(arr2); // 5 6 7 8
+
+
+var o = {};
+o.a = 1;
+var b = o;
+b.a = 2;
+alert(o.a); // 2
+
+
+for(var i = 0 ; i < 100 ; i++){
+  setTimeout(function(){
+    console.log(i);
+  },0);
+} // 100个100
+
+
+function fo(){
+  var i = 0;
+  return function(n){
+    return n + i++;
+  }
+}
+var f = fo();
+var a = f(20);//20
+var b = fo()(20); //20
+var c = fo()(10); //10
+var d = f(10);// 11
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+
+
+function outer(){
+  var m = 100;
+  function inner(){
+    m += 10;
+    console.log(m);
+  }
+  return inner;
+}
+var i = outer();
+var j = outer();
+i(); // 110
+i(); //120
+j(); //110
+
+
+
+function fun1(m,n){
+  function fun2(m){
+    console.log(m + n);
+  }
+  return fun2;
+}
+var fun = fun1(5,6);
+fun(8); //14
+
+
+var m = 10;
+function fun(){
+  var m = 20;
+  m++;
+  return m;
+}
+m += fun();
+console.log(m); // 31
+
+
+
+console.log(fun(2,6)); // 20
+function fun(a,b){
+  var s = 0;
+  for(var i = a ; i <= b ; i++){
+    s += i;
+  }
+  return s;
+}
+
+
+
+var a = 0;
+while(true){
+  a++;
+  if(a % 5 == 0 && a % 6 == 1)
+    break;
+}
+console.log(a); // 25
+
+
+for(var i = 0 ; i < 10 ; i+=3){}
+console.log(i); //12
+
+
+
+for(var i = 4 , s = 1; i > 0 ; i--){
+  s *= i;
+}
+console.log(s); // 24
+
+
+
+for(var i = 1 ; i < 12 ; i++){
+  i += 3;
+  console.log(i); // 4 8 12
+}
