@@ -110,3 +110,117 @@ for(var i = 1 ; i < 12 ; i++){
   i += 3;
   console.log(i); // 4 8 12
 }
+
+
+13. 下面程序的执行后，会输出几个true？
+console.log([] == []);
+console.log({} == {});
+console.log(/\d/ == /\d/);
+console.log(Math == Math);
+(A) 1个
+
+12. 下面程序的执行结果为？
+fun1();
+function fun1(){
+console.log("A");
+}
+var fun1 = function(){
+    console.log("B");
+}
+function fun2(){
+console.log("C");
+}
+var fun2 = function(){
+    console.log("D");
+}
+fun2();
+(B) "A""D"
+
+11. 下面程序的执行结果为？
+var a = true; 
+var b = false;
+function fn(){
+   if(a){var a = 10;}
+   if(b){var b = 20;}
+   console.log(a + b);
+}
+fn();
+	(D)NaN
+10. 下面程序的执行结果为？
+	console.log(m);
+console.log(n);
+	if(3 > 8){
+		var m = 20;
+	}else{
+     var n = 30;
+}
+
+(C)undefined undefined 		(D) 程序会报错
+
+9. 下面程序的执行结果为？
+var a = 10;
+function fun(){
+		console.log(a);
+		var a = 20;
+}
+
+fun();
+(A) 10  		(B) 20			(C)undefined		(D) 报错
+8. 下面程序的执行结果为？
+var a = 5 && true;  
+var b = false || 6;  
+console.log(a + b); 
+(A) 5   		(B) 7			(C)13				(D) 1
+7. 下面程序的执行结果为？
+var a = 3;
+var b = 4;
+var c = a++ + b++ + ++a + ++b;
+console.log(c);
+(A) 17   		(B) 18			(C)19
+
+6. 下面程序的执行结果为？
+var foo = true; 
+function bar(){
+if(!foo){
+    		var foo=10;
+    }
+    console.log(foo);
+}
+bar();
+(A) 1   	  (B) 10
+
+5. 下面程序的执行结果为？
+var a = "2.2";
+var b = 1.1;
+var c = parseInt(a + b);
+console.log(c);
+(A) 2 
+
+4. 下面语句中，总共会输出几个true？
+console.log(NaN == NaN); //f
+console.log(isNaN(NaN));  //t
+console.log(isNaN("365天")); //t
+console.log(isNaN(false)); //f
+console.log(NaN == undefined);  //t
+console.log(null == undefined); //t
+console.log(undefined == 0);  //t
+console.log(null == 0);       //t
+(A) 6个  		(B) 5个			(C) 4个			(D) 3个
+
+3. 下面4个表达式中，结果为NaN的是？
+① 100 / 0;
+② 0 / 0;
+③ parseInt("爱前端");
+④ "NaNxyz" - "xyz";
+(A) ①  	(B) ②			(C) ②③		(D) ②③④
+2. 下面程序的执行结果为？
+var a;
+console.log(a);
+console.log(typeof a);
+(A) 报错						(B) undefined object		
+(C) undefined string	 		(D) undefined undefined
+
+1. 下列JavaScript变量名中，不合法的一项的？
+(A) $			(B) $0_0$			(C) 2nd	 		(D) _123
+
+
